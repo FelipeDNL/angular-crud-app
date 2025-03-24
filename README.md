@@ -1,6 +1,6 @@
 # AngularCrudApp
 
-Projeto de website simples de C.R.U.D (Create, Read, Update, Delete) para livros. Feito com intensão de conhecer e aprimorar minhas habilidades com framework Angular.
+Projeto de website simples de C.R.U.D (Create, Read, Update, Delete) para livros. Feito com intenção de conhecer e aprimorar minhas habilidades com framework Angular e Typescript.
 
 Este projeto foi gerado usando o [Angular CLI](https://github.com/angular/angular-cli) versão 19.2.4.
 
