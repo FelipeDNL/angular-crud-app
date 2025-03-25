@@ -1,1 +1,13 @@
-<p>adicionar-livro works!</p>
+<h1>Adicionar Livro</h1>
+<form (ngSubmit)="adicionarLivro()">
+  <label for="titulo">Título:</label>
+  <input id="titulo" [(ngModel)]="livro.titulo" name="titulo" required>
+  <label for="autor">Autor:</label>
+  <input id="autor" [(ngModel)]="livro.autor" name="autor" required>
+  <label for="editora">Editora:</label>
+  <input id="editora" [(ngModel)]="livro.editora" name="editora" required>
+  <label for="ano">Ano:</label>
+  <input id="ano" type="number" [(ngModel)]="livro.ano" name="ano" required>
+  <button type="submit">Adicionar</button>
+</form>
+<a routerLink="/livros">Voltar</a>
