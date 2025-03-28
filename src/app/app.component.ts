@@ -9,4 +9,9 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'angular-crud-app';
+  currentDate: string = new Date().toLocaleDateString('pt-BR', {
+    day: '2-digit',
+    month: 'long',
+    year: 'numeric'
+  });
 }

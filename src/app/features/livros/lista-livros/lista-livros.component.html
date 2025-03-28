@@ -1,18 +1,19 @@
-<h1>Lista de Livros</h1>
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Título</th>
-      <th>Autor</th>
-      <th>Editora</th>
-      <th>Ano</th>
-      <th>Ações</th>
-    </tr>
-  </thead>
-  <tbody>
-    <div class="meio-pagina">
-      <div class="tabela-livros">
+<div class="lista-livros">
+  <div class="bloco-lista">
+    <h1>Lista de Livros</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Título</th>
+          <th>Autor</th>
+          <th>Editora</th>
+          <th>Ano</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+
+      <tbody>
         <tr *ngFor="let livro of livros; let i = index" [class.odd]="i % 2 === 0" [class.even]="i % 2 !== 0">
           <td>{{ livro.id }}</td>
           <td>{{ livro.titulo }}</td>
@@ -24,14 +25,31 @@
             <button (click)="deleteLivro(livro.id)">Excluir</button>
           </td>
         </tr>
-      </div>
+      </tbody>
+    </table>
+    <a routerLink="/livros/adicionar">Adicionar Livro</a>
+  </div>
 
-      <div class="texto">
-        oi
-      </div>
+  <div class="bloco-texto">
+    <h1>Texto</h1>
+    ipsum
+    dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum
+    voluptates, quia voluptas sit aspernatur aut odit aut fugit, sed quia
+    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+    adipisci velit. Quisquam est et nemo qui ratione voluptatem sequi nesciunt.
+    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+    adipisci velit. Quisquam est et nemo qui ratione voluptatem sequi nesciunt.
+  </div>
+</div>
 
-    </div>
-
-  </tbody>
-</table>
-<a routerLink="/livros/adicionar">Adicionar Livro</a>
+<div class="bloco-texto-2">
+  ipsum
+  dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum
+  voluptates, quia voluptas sit aspernatur aut odit aut fugit, sed quia
+  consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+  adipisci velit. Quisquam est et nemo qui ratione voluptatem sequi nesciunt.
+  Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+  adipisci velit. Quisquam est et nemo qui ratione voluptatem sequi nesciunt.
+</div>
