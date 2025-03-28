@@ -11,17 +11,27 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let livro of livros">
-      <td>{{ livro.id }}</td>
-      <td>{{ livro.titulo }}</td>
-      <td>{{ livro.autor }}</td>
-      <td>{{ livro.editora }}</td>
-      <td>{{ livro.ano }}</td>
-      <td>
-        <a [routerLink]="['/livros/editar', livro.id]">Editar</a>
-        <button (click)="deleteLivro(livro.id)">Excluir</button>
-      </td>
-    </tr>
+    <div class="meio-pagina">
+      <div class="tabela-livros">
+        <tr *ngFor="let livro of livros; let i = index" [class.odd]="i % 2 === 0" [class.even]="i % 2 !== 0">
+          <td>{{ livro.id }}</td>
+          <td>{{ livro.titulo }}</td>
+          <td>{{ livro.autor }}</td>
+          <td>{{ livro.editora }}</td>
+          <td>{{ livro.ano }}</td>
+          <td style="display: flex; gap: 10px;">
+            <a [routerLink]="['/livros/editar', livro.id]">Editar</a>
+            <button (click)="deleteLivro(livro.id)">Excluir</button>
+          </td>
+        </tr>
+      </div>
+
+      <div class="texto">
+        oi
+      </div>
+
+    </div>
+
   </tbody>
 </table>
 <a routerLink="/livros/adicionar">Adicionar Livro</a>

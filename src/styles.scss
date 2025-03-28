@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: 'FontVogue';
+  src: url('./app/assets/fonts/Vogue.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OldStandard-Regular';
+  src: url('./app/assets/fonts/OldStandard-Regular.ttf') format('truetype');
+}
+
+// Aplicar a fonte globalmente
+body {
+  font-family: 'OldStandard-Regular', serif;
+  color: #333;
+  background-color: rgba(250, 235, 215, 0.185);
+  display: flex;
+  justify-content: center;
+}

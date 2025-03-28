@@ -4,8 +4,7 @@ import { AdicionarLivroComponent } from './features/livros/adicionar-livro/adici
 import { EditarLivroComponent } from './features/livros/editar-livro/editar-livro.component';
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'livros', pathMatch: 'full' },
-    { path: 'livros', component: ListaLivrosComponent },
+    { path: '', component: ListaLivrosComponent },
     { path: 'livros/adicionar', component: AdicionarLivroComponent },
     { path: 'livros/editar/:id', component: EditarLivroComponent }, 
 ];
