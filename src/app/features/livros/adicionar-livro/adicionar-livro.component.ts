@@ -1,8 +1,8 @@
-import { Component, NgModule } from '@angular/core';
+import { Component } from '@angular/core';
 import { LivroService } from '../../../core/services/livro.service';
 import { Livro } from '../../../core/models/livro.model';
 import { CommonModule } from '@angular/common';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 @Component({
@@ -19,6 +19,10 @@ export class AdicionarLivroComponent {
   adicionarLivro(): void {
     this.livro.id = Math.max(...this.livroService.getLivros().map(l => l.id)) + 1;
     this.livroService.addLivro(this.livro);
-    this.router.navigate(['/livros']);
+    this.router.navigate(['']);
+  }
+
+  navigateToLivros(): void {
+    this.router.navigate(['']); // Redireciona para a lista de livros
   }
 }

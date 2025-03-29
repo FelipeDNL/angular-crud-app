@@ -1,1 +1,29 @@
-<p>editar-livro works!</p>
+<h1>Editar Livro</h1>
+<div class="editar-livro-form">
+  <form (ngSubmit)="editarLivro()">
+
+    <div>
+      <label for="titulo">Título: </label>
+      <input id="titulo" [(ngModel)]="livro.titulo" name="titulo" required />
+    </div>
+
+    <div>
+      <label for="autor">Autor: </label>
+      <input id="autor" [(ngModel)]="livro.autor" name="autor" required />
+    </div>
+
+    <div>
+      <label for="editora">Editora: </label>
+      <input id="editora" [(ngModel)]="livro.editora" name="editora" required />
+    </div>
+
+    <div>
+      <label for="ano">Ano: </label>
+      <input id="ano" type="number" [(ngModel)]="livro.ano" name="ano" required />
+    </div>
+
+    <button type="submit">Salvar</button>
+  </form>
+</div>
+
+<button type="button" (click)="navigateToLivros()">Cancelar</button>

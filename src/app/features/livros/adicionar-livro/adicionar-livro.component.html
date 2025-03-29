@@ -1,13 +1,29 @@
 <h1>Adicionar Livro</h1>
-<form (ngSubmit)="adicionarLivro()">
-  <label for="titulo">Título:</label>
-  <input id="titulo" [(ngModel)]="livro.titulo" name="titulo" required>
-  <label for="autor">Autor:</label>
-  <input id="autor" [(ngModel)]="livro.autor" name="autor" required>
-  <label for="editora">Editora:</label>
-  <input id="editora" [(ngModel)]="livro.editora" name="editora" required>
-  <label for="ano">Ano:</label>
-  <input id="ano" type="number" [(ngModel)]="livro.ano" name="ano" required>
-  <button type="submit">Adicionar</button>
-</form>
-<a routerLink="/livros">Voltar</a>
+<div class="adicionar-livro-form">
+  <form (ngSubmit)="adicionarLivro()">
+    
+    <div>
+      <label for="titulo">Título: </label>
+      <input id="titulo" [(ngModel)]="livro.titulo" name="titulo" required>
+    </div>
+
+    <div>
+      <label for="autor">Autor: </label>
+      <input id="autor" [(ngModel)]="livro.autor" name="autor" required>
+    </div>
+
+    <div>
+      <label for="editora">Editora: </label>
+      <input id="editora" [(ngModel)]="livro.editora" name="editora" required>
+    </div>
+
+    <div>
+      <label for="ano">Ano: </label>
+      <input id="ano" type="number" [(ngModel)]="livro.ano" name="ano" required>
+    </div>
+
+    <button type="submit">Adicionar</button>
+  </form>
+</div>
+
+<button type="button" (click)="navigateToLivros()">Voltar</button>
