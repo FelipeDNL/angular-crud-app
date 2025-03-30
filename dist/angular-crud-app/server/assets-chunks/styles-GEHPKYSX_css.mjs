@@ -1,0 +1,2 @@
+export default `@font-face{font-family:FontVogue;src:url("./media/Vogue-NHKVU77T.ttf") format("truetype")}@font-face{font-family:OldStandard-Regular;src:url("./media/OldStandard-Regular-4IN46PDL.ttf") format("truetype")}body{font-family:OldStandard-Regular,serif;color:#333;background-color:#faebd72f;display:flex;justify-content:center}
+`;
