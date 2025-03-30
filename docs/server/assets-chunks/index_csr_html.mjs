@@ -9,6 +9,6 @@ export default `<!doctype html>
 <style>@font-face{font-family:OldStandard-Regular;src:url("./media/OldStandard-Regular-4IN46PDL.ttf") format("truetype")}body{font-family:OldStandard-Regular,serif;color:#333;background-color:#faebd72f;display:flex;justify-content:center}</style><link rel="stylesheet" href="styles-GEHPKYSX.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-GEHPKYSX.css"></noscript></head>
 <body ngcm="">
   <app-root></app-root>
-<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-MA4LM33E.js" type="module"></script></body>
+<script src="polyfills-FFHMD2TL.js" type="module"></script><script src="main-53UC6SRR.js" type="module"></script></body>
 </html>
 `;
