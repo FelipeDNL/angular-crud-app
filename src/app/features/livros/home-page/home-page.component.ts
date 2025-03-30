@@ -8,8 +8,8 @@ import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-lista-livros',
   imports: [ CommonModule, RouterLink ],
-  templateUrl: './lista-livros.component.html',
-  styleUrl: './lista-livros.component.scss'
+  templateUrl: './home-page.component.html',
+  styleUrl: './home-page.component.scss'
 })
 export class ListaLivrosComponent {
   livros: Livro[] = [];

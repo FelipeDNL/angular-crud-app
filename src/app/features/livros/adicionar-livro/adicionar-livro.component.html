@@ -1,8 +1,19 @@
 <h1>Adicionar Livro</h1>
 <div class="adicionar-livro-form">
+  <!-- 
+  <form> inclui o ngSubmit para enviar os dados do formulário quando o botão "Adicionar" é clicado.
+  O método adicionarLivro() é chamado para processar os dados do livro.
+  ngSubmit é uma diretiva Angular que escuta o evento de envio do formulário e executa a função especificada.
+  O método adicionarLivro() deve ser definido no componente TypeScript correspondente para lidar com a lógica de adição do livro.
+
+  -->
   <form (ngSubmit)="adicionarLivro()">
-    
+
     <div>
+      <!--  O formulário contém campos para o título, autor, editora e ano do livro.
+            Cada campo de entrada é vinculado a uma propriedade do objeto livro usando [(ngModel)], 
+            que é uma diretiva Angular para criar uma ligação bidirecional entre o modelo e a visão.
+      -->
       <label for="titulo">Título: </label>
       <input id="titulo" [(ngModel)]="livro.titulo" name="titulo" required>
     </div>
@@ -26,4 +37,5 @@
   </form>
 </div>
 
+<!-- navigateToLivros() é um simples método para retornar a paágina anterior-->
 <button type="button" (click)="navigateToLivros()">Voltar</button>

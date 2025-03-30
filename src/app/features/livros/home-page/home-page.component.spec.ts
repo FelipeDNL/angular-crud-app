@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExcluirLivroComponent } from './excluir-livro.component';
+import { ListaLivrosComponent } from './home-page.component';
 
-describe('ExcluirLivroComponent', () => {
-  let component: ExcluirLivroComponent;
-  let fixture: ComponentFixture<ExcluirLivroComponent>;
+describe('ListaLivrosComponent', () => {
+  let component: ListaLivrosComponent;
+  let fixture: ComponentFixture<ListaLivrosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ExcluirLivroComponent]
+      imports: [ListaLivrosComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ExcluirLivroComponent);
+    fixture = TestBed.createComponent(ListaLivrosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
