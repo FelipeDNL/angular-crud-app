@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/": {},
+    "/livros/adicionar": {},
+    "/livros/editar/1": {},
+    "/livros/editar/2": {},
+    "/livros/editar/3": {}
+  }
+}
