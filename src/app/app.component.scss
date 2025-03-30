@@ -1,10 +1,14 @@
 .container {
     width: 1200px;
-    height: 1100px;
+    height: 900px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+header {
+    height: 200px;
 }
 
 .app-header-info {
@@ -23,9 +27,9 @@
     font-size: 20px;
 }
 
-.app-header {
+.app-header-title {
     margin: 0;
-    font-size: 90px;
+    font-size: 60px;
     border-bottom: 3px solid #000000;
     border-top: 2px solid;
     padding: 20px;
@@ -40,15 +44,50 @@
 }
 
 footer {
-    margin-top: 20px;
     font-size: 12px;
     color: #666;
 }
 
 main {
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .container {
+        width: auto;
+        height: auto;
+        justify-content: center;
+        font-size: small;
+    }
+
+    .link-1,
+    .link-2,
+    .link-3 {
+        font-size: 15px;
+    }
+
+    main {
+        width: auto;
+        height: auto;
+    }
+
+    header {
+        width: auto;
+        height: auto;
+    }
+
+    .app-header-title {
+        font-size: 40px;
+    }
+
+    .app-header-sub {
+        font-size: 13px;
+        padding: 10px;
+    }
 }

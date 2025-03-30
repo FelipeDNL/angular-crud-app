@@ -12,12 +12,12 @@ td {
 
 tr.odd {
     background-color: #f9f9f9;
-    /* Cor branca */
+    /* linha branca na tabela*/
 }
 
 tr.even {
     background-color: #e0e0e0;
-    /* Cor cinza */
+    /* linha cinza na tabela*/
 }
 
 .lista-livros {
@@ -43,4 +43,84 @@ tr.even {
 
 .link-1 {
     color: #000000;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    table {
+        width: 550px;
+        border-collapse: collapse;
+    }
+    
+    th,
+    td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    
+    .lista-livros {
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        width: auto;
+    }
+    
+    .bloco-lista{
+        flex: 1;
+        width: auto;
+    }
+    
+    .bloco-texto {
+        flex: 1;
+        width: auto;
+        border-left: 2px solid #ddd;
+    }
+    
+    .bloco-texto-2 {
+        padding-top: 40px;
+    }
+    
+}
+
+@media (max-width: 840px) {
+    .lista-livros {
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        width: auto;
+    }
+
+    table {
+        width: 700px;
+        border-collapse: collapse;
+    }
+
+    .bloco-texto{
+        border: none;
+        padding: 0;
+    }
+}
+
+@media (max-width: 740px) {
+    .lista-livros {
+        flex-direction: column-reverse;
+        padding-top: 30px;
+        width: auto;
+    }
+
+    table {
+        width: auto;
+        border-collapse: collapse;
+    }
+
+    .bloco-lista{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .bloco-texto{
+        border: none;
+        padding: 0;
+    }
 }
