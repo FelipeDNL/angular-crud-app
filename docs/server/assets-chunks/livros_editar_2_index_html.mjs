@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta charset="utf-8">
   <title>C.R.U.D Angular</title>
-  <base href="/">
+  <base href>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <style>@font-face{font-family:OldStandard-Regular;src:url("./media/OldStandard-Regular-4IN46PDL.ttf") format("truetype")}body{font-family:OldStandard-Regular,serif;color:#333;background-color:#faebd72f;display:flex;justify-content:center}
