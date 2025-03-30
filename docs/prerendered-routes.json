@@ -1,9 +1,9 @@
 {
   "routes": {
-    "/angular-crud-app": {},
-    "/angular-crud-app/livros/adicionar": {},
-    "/angular-crud-app/livros/editar/1": {},
-    "/angular-crud-app/livros/editar/2": {},
-    "/angular-crud-app/livros/editar/3": {}
+    "/angular-crud-app/browser": {},
+    "/angular-crud-app/browser/livros/adicionar": {},
+    "/angular-crud-app/browser/livros/editar/1": {},
+    "/angular-crud-app/browser/livros/editar/2": {},
+    "/angular-crud-app/browser/livros/editar/3": {}
   }
 }

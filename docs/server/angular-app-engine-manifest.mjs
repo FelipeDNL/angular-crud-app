@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/angular-crud-app',
+  basePath: '/angular-crud-app/browser',
   supportedLocales: {
   "en-US": ""
 },
