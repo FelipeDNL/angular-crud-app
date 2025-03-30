@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/angular-crud-app',
+  basePath: 'https://felipednl.github.io/angular-crud-app',
   supportedLocales: {
   "en-US": ""
 },
